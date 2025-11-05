@@ -1,28 +1,32 @@
 "use client";
 import React from 'react'
 import { 
-  FaSearch, 
-  FaQuestionCircle, 
-  FaBook, 
-  FaMobileAlt, 
-  FaFolder,
+  FaComments, 
+  FaUserTie, 
+  FaClock, 
+  FaEyeSlash, 
+  FaChartLine,
   FaBullseye,
+  FaProjectDiagram,
+  FaTasks,
+  FaUserClock,
+  FaCalculator,
+  FaLock,
   FaChartBar,
-  FaLightbulb,
-  FaFileAlt,
-  FaBolt,
-  FaImage,
-  FaGraduationCap,
-  FaPalette,
-  FaRobot,
-  FaLink,
   FaUsers,
+  FaHandshake,
+  FaFileInvoiceDollar,
   FaCogs,
   FaCheckCircle,
+  FaRocket,
+  FaPuzzlePiece,
+  FaCommentDots,
+  FaSyncAlt,
   FaHeart
 } from 'react-icons/fa'
 
-function Hyperflexai() {
+
+function WorklogixAi() {
   return (
     <div className="relative bg-primary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
@@ -35,6 +39,7 @@ function Hyperflexai() {
         <div className="absolute bottom-20 right-1/3 w-16 h-16 bg-secondary/18 rounded-full"></div>
       </div>
 
+
       {/* Floating Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-16 w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full animate-pulse"></div>
@@ -43,15 +48,16 @@ function Hyperflexai() {
         <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-white/40 rounded-full animate-pulse"></div>
       </div>
 
+
       <div className="container mx-auto px-8 lg:px-16 relative z-10">
         {/* Enhanced Hero Section */}
         <div className="text-center mb-16 py-12">
           <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
-            Academic Search Engine
+            Task and Team Management Platform
           </div>
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            Hyperflx: The <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Smarter Way</span> to Search for Academic Knowledge
+            WorkLogix: <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Smarter Task</span> and Team Management
           </h1>
           <div className="max-w-4xl mx-auto">
             <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
@@ -60,33 +66,35 @@ function Hyperflexai() {
               
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
-                Why We Built Hyperflx
+                Why We Built WorkLogix
               </h2>
               <p className="text-lg text-white/90 leading-relaxed text-justify">
-                At <span className="text-secondary font-medium">Codework</span>, we saw a gap in how students and researchers access reliable academic content. We built <span className="text-secondary font-medium">Hyperflx</span>, an AI-powered search engine made specifically for education and research. It delivers trusted, easy-to-understand, and well-organized results to make learning smoother and faster.
-              </p>
+  At <span className="text-secondary font-medium">Codework</span>, we saw how organizations struggle with scattered communication, missed deadlines, and unclear accountability. So, we built <span className="text-secondary font-medium">WorkLogix</span> — a web-based platform that brings leadership, managers, and employees together in one streamlined workspace. WorkLogix helps companies assign, monitor, and complete projects efficiently while giving leaders full visibility across teams.
+</p>
+
               
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
             </div>
           </div>
         </div>
 
+
         {/* Enhanced Problems Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Common Struggles in Academic Search
+              Common Workplace Challenges
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-transparent mx-auto rounded-full"></div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Overwhelming Search Results", desc: "Too many irrelevant links", icon: <FaSearch className="text-secondary" /> },
-              { title: "Doubtful Sources", desc: "Hard to tell what's credible", icon: <FaQuestionCircle className="text-secondary" /> },
-              { title: "Dense Terminology", desc: "Complex terms with no clear definitions", icon: <FaBook className="text-secondary" /> },
-              { title: "Lack of Visuals", desc: "Few images or videos to simplify learning", icon: <FaMobileAlt className="text-secondary" /> },
-              { title: "Unstructured Layouts", desc: "Cluttered content makes research harder", icon: <FaFolder className="text-secondary" /> }
+              { title: "Scattered Communication", desc: "Too many chats, emails, and spreadsheets cause confusion", icon: <FaComments className="text-secondary" /> },
+              { title: "Unclear Responsibilities", desc: "Employees often don't know who's accountable for what", icon: <FaUserTie className="text-secondary" /> },
+              { title: "Manual Tracking", desc: "Leaders spend hours tracking progress and hours worked", icon: <FaClock className="text-secondary" /> },
+              { title: "Lack of Transparency", desc: "Teams miss updates or duplicate efforts", icon: <FaEyeSlash className="text-secondary" /> },
+              { title: "Limited Insights", desc: "Without real-time data, it's hard to make informed decisions", icon: <FaChartLine className="text-secondary" /> }
             ].map((problem, index) => (
               <div key={index} className="bg-primary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-secondary/30 hover:bg-primary/40 group">
                 <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{problem.icon}</div>
@@ -97,38 +105,40 @@ function Hyperflexai() {
           </div>
         </div>
 
+
         {/* Enhanced Images Section */}
         <div className="mb-20">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="group relative overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/CaseStudies/hyperfleex.jpg"
-                alt="Person using Hyperflx for academic search"
+                src="/CaseStudies/worklog1.jpg"
+                alt="WorkLogix dashboard interface"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Smart Academic Search</h3>
-                <p className="text-sm opacity-90 text-secondary">AI-powered research made simple</p>
+                <h3 className="text-xl font-bold mb-2">Unified Workspace</h3>
+                <p className="text-sm opacity-90 text-secondary">All teams in one platform</p>
               </div>
             </div>
             
             <div className="group relative overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/CaseStudies/hyperflx2.jpg"
-                alt="Hyperflx displaying academic media results"
+                src="/CaseStudies/working.jpg"
+                alt="WorkLogix project management view"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Visual Learning</h3>
-                <p className="text-sm opacity-90 text-secondary">Rich media for better understanding</p>
+                <h3 className="text-xl font-bold mb-2">Real-Time Tracking</h3>
+                <p className="text-sm opacity-90 text-secondary">Monitor progress instantly</p>
               </div>
             </div>
           </div>
         </div>
+
 
         {/* Enhanced Features Section */}
         <div className="mb-20">
@@ -142,24 +152,19 @@ function Hyperflexai() {
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
                   <FaBullseye className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">Our Smarter Search Strategy</h3>
+                <h3 className="text-3xl font-bold text-white">Our Smarter Workflow Solution</h3>
               </div>
               
               <p className="text-white/90 mb-6 text-lg">
-                <span className="text-secondary font-medium">Hyperflx</span> is built to solve those problems using a focused, AI-driven approach:
+                <span className="text-secondary font-medium">WorkLogix</span> is designed to solve these issues with role-based access and structured workflows for every level of your organization:
               </p>
               
               <div className="space-y-4">
-                <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-4 border-l-4 border-secondary">
-                  <p className="text-white/90">
-                    <span className="font-semibold text-secondary">AI-Powered Responses:</span> Hyperflx utilizes LLMs to generate answers and responses based on training data. Unlike platforms such as PerplexCity, it does not source its information from the web in real-time. However, it does gather images and videos from online sources for visual content generation.
-                  </p>
-                </div>
-                
                 {[
-                  { title: "Visual Support", desc: "Includes educational images and videos to aid understanding", icon: <FaChartBar className="text-secondary" /> },
-                  { title: "Instant Definitions", desc: "Explains complex academic terms clearly", icon: <FaLightbulb className="text-secondary" /> },
-                  { title: "Summarized Concepts", desc: "Offers easy-to-read summaries for faster learning", icon: <FaFileAlt className="text-secondary" /> }
+                  { title: "Leadership Dashboard", desc: "Oversee organization-wide performance, assign projects to managers, and monitor progress instantly", icon: <FaProjectDiagram className="text-secondary" /> },
+                  { title: "Project Manager Control", desc: "Create and manage projects, assign tasks to employees, and ensure timely completion through live progress tracking", icon: <FaTasks className="text-secondary" /> },
+                  { title: "Employee Workspace", desc: "View assigned tasks, update status, and log working hours seamlessly", icon: <FaUserClock className="text-secondary" /> },
+                  { title: "Accountant Console", desc: "Track project costs, manage rates, and generate financial reports with ease", icon: <FaCalculator className="text-secondary" /> }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
@@ -174,6 +179,7 @@ function Hyperflexai() {
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
             </div>
 
+
             {/* Unique Value */}
             <div className="bg-gradient-to-br from-secondary/80 to-secondary rounded-3xl p-8 shadow-2xl text-primary relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none"></div>
@@ -182,16 +188,16 @@ function Hyperflexai() {
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4">
                   <FaHeart className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold">What Makes Our Tool Unique</h3>
+                <h3 className="text-3xl font-bold">What Makes WorkLogix Unique</h3>
               </div>
               
               <div className="space-y-4 relative z-10">
                 {[
-                  { title: "Distraction-Free Learning", desc: "No ads or unrelated links", icon: <FaBullseye className="text-primary" /> },
-                  { title: "Simplified Research Experience", desc: "Get to the point quickly", icon: <FaBolt className="text-primary" /> },
-                  { title: "Visual Learning Friendly", desc: "Diagrams and videos for a better grasp", icon: <FaImage className="text-primary" /> },
-                  { title: "Academic Accuracy Guaranteed", desc: "Built for students and educators", icon: <FaGraduationCap className="text-primary" /> },
-                  { title: "Clean and Easy Interface", desc: "Simple to search, read, and explore", icon: <FaPalette className="text-primary" /> }
+                  { title: "Role-Based Access Control", desc: "Every team member sees what matters most to their role", icon: <FaLock className="text-primary" /> },
+                  { title: "Visual Dashboards", desc: "Quick insights into projects, tasks, and team performance", icon: <FaChartBar className="text-primary" /> },
+                  { title: "Smart Time Tracking", desc: "Monitor work hours and task completion for better accountability", icon: <FaClock className="text-primary" /> },
+                  { title: "Collaborative Task Management", desc: "Keep communication transparent across teams and departments", icon: <FaHandshake className="text-primary" /> },
+                  { title: "Performance Insights", desc: "Real-time data helps leaders make informed, faster decisions", icon: <FaFileInvoiceDollar className="text-primary" /> }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-primary/10 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
@@ -206,6 +212,7 @@ function Hyperflexai() {
           </div>
         </div>
 
+
         {/* Enhanced Development Process */}
         <div className="mb-20">
           <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden">
@@ -218,16 +225,16 @@ function Hyperflexai() {
                 Development Process
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">
-                From Idea to Launch: How We Did It Fast
+                How We Built It Fast and Scalable
               </h3>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               {[
-                { title: "Pre-trained Language Models", desc: "Saved time on training from scratch", icon: <FaRobot className="text-secondary" /> },
-                { title: "API Integrations", desc: "Connected to real-time academic sources", icon: <FaLink className="text-secondary" /> },
-                { title: "User Feedback Testing", desc: "Refined through real student/teacher input", icon: <FaUsers className="text-secondary" /> },
-                { title: "CI/CD Automation", desc: "Enabled fast updates and scalable improvements", icon: <FaCogs className="text-secondary" /> }
+                { title: "Modular Architecture", desc: "Built with flexibility to scale across multiple departments", icon: <FaPuzzlePiece className="text-secondary" /> },
+                { title: "API Integrations", desc: "Connects seamlessly with HR, finance, and communication tools", icon: <FaCogs className="text-secondary" /> },
+                { title: "User-Centric Testing", desc: "Refined with feedback from project managers and employees", icon: <FaCommentDots className="text-secondary" /> },
+                { title: "Automated Reporting", desc: "Generates visual reports for productivity and time tracking", icon: <FaSyncAlt className="text-secondary" /> }
               ].map((item, index) => (
                 <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
@@ -237,15 +244,10 @@ function Hyperflexai() {
               ))}
             </div>
             
-            <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-secondary">
-              <p className="text-white/90 text-lg">
-                <span className="font-semibold text-secondary">Result:</span> It helped us launch ahead of schedule, without compromising quality.
-              </p>
-            </div>
-            
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
           </div>
         </div>
+
 
         {/* Enhanced Final Thoughts */}
         <div className="text-center mb-12">
@@ -253,24 +255,26 @@ function Hyperflexai() {
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none"></div>
             
             <h3 className="text-4xl font-bold mb-6 relative z-10">
-              Final Thoughts: A Better Future for Learning
+              Simpler Management, Smarter Teams
             </h3>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto mb-8 text-primary/90 relative z-10">
-              <span className="font-medium">Hyperflx</span> makes academic research smarter, simpler, and more student-friendly. It allows users to filter out irrelevant information, grasp complex concepts more quickly, and learn in a style that suits them best.
+              <span className="font-medium">WorkLogix</span> helps organizations stay on top of projects without the chaos. With clear roles, instant reporting, and transparent collaboration — leadership gains control, managers gain clarity, and employees stay focused.
             </p>
             <div className="bg-primary/20 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto relative z-10 border border-primary/30">
               <p className="text-lg font-medium">
-                It's not just a search engine—it's a reliable learning partner built for the future of education.
+                It's not just a project tracker — It's your intelligent partner for productive teamwork.
               </p>
             </div>
           </div>
         </div>
       </div>
 
+
       {/* Enhanced Bottom Decoration */}
       <div className="absolute bottom-0 right-0 opacity-20">
         <div className="w-32 h-16 md:w-64 md:h-32 bg-gradient-to-l from-secondary/30 to-transparent rounded-tl-full"></div>
       </div>
+
 
       {/* Custom CSS for Animations */}
       <style jsx>{`
@@ -287,4 +291,5 @@ function Hyperflexai() {
   )
 }
 
-export default Hyperflexai
+
+export default WorklogixAi;

@@ -1,28 +1,31 @@
 "use client";
 import React from 'react'
 import { 
-  FaSearch, 
-  FaQuestionCircle, 
-  FaBook, 
-  FaMobileAlt, 
-  FaFolder,
+  FaComments, 
+  FaUserTie, 
+  FaClock, 
+  FaEyeSlash, 
+  FaChartLine,
   FaBullseye,
+  FaProjectDiagram,
+  FaTasks,
+  FaUserClock,
+  FaCalculator,
+  FaLock,
   FaChartBar,
-  FaLightbulb,
-  FaFileAlt,
-  FaBolt,
-  FaImage,
-  FaGraduationCap,
-  FaPalette,
-  FaRobot,
-  FaLink,
   FaUsers,
+  FaHandshake,
+  FaFileInvoiceDollar,
   FaCogs,
   FaCheckCircle,
+  FaRocket,
+  FaPuzzlePiece,
+  FaCommentDots,
+  FaSyncAlt,
   FaHeart
 } from 'react-icons/fa'
 
-function Hyperflexai() {
+function HirelyszsAi() {
   return (
     <div className="relative bg-primary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
@@ -48,10 +51,10 @@ function Hyperflexai() {
         <div className="text-center mb-16 py-12">
           <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
-            Academic Search Engine
+            Intelligent AI Interview Platform
           </div>
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            Hyperflx: The <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Smarter Way</span> to Search for Academic Knowledge
+            Hirelysze: <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Intelligent AI</span> Interview Platform
           </h1>
           <div className="max-w-4xl mx-auto">
             <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
@@ -60,10 +63,10 @@ function Hyperflexai() {
               
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
-                Why We Built Hyperflx
+                Why We Built Hirelysze
               </h2>
               <p className="text-lg text-white/90 leading-relaxed text-justify">
-                At <span className="text-secondary font-medium">Codework</span>, we saw a gap in how students and researchers access reliable academic content. We built <span className="text-secondary font-medium">Hyperflx</span>, an AI-powered search engine made specifically for education and research. It delivers trusted, easy-to-understand, and well-organized results to make learning smoother and faster.
+                We noticed that traditional interviews often consume too much time and lack consistency. Recruiters struggle to manage large volumes of applications, while candidates experience delayed feedback and subjective evaluations. We built <span className="text-secondary font-medium">Hirelysze</span> to address these gaps. It is designed to make interviews <span className="text-secondary font-medium">faster, more accurate, and bias free</span> by simulating human like conversations powered by AI and 3D technology. The goal is simple: to help recruiters find the right talent with speed and confidence.
               </p>
               
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
@@ -75,18 +78,17 @@ function Hyperflexai() {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Common Struggles in Academic Search
+              Common Challenges in Recruitment Interviews
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-transparent mx-auto rounded-full"></div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Overwhelming Search Results", desc: "Too many irrelevant links", icon: <FaSearch className="text-secondary" /> },
-              { title: "Doubtful Sources", desc: "Hard to tell what's credible", icon: <FaQuestionCircle className="text-secondary" /> },
-              { title: "Dense Terminology", desc: "Complex terms with no clear definitions", icon: <FaBook className="text-secondary" /> },
-              { title: "Lack of Visuals", desc: "Few images or videos to simplify learning", icon: <FaMobileAlt className="text-secondary" /> },
-              { title: "Unstructured Layouts", desc: "Cluttered content makes research harder", icon: <FaFolder className="text-secondary" /> }
+              { title: "Time Intensive Screening", desc: "Recruiters spend hours conducting repetitive first round interviews", icon: <FaComments className="text-secondary" /> },
+              { title: "Inconsistent Evaluation", desc: "Each interviewer assesses candidates differently, creating uneven results", icon: <FaUserTie className="text-secondary" /> },
+              { title: "Scheduling Difficulties", desc: "Coordinating times between candidates and interviewers is often complicated", icon: <FaClock className="text-secondary" /> },
+              { title: "Limited Insights", desc: "Traditional interviews rarely provide behavioral or emotional analysis", icon: <FaEyeSlash className="text-secondary" /> }
             ].map((problem, index) => (
               <div key={index} className="bg-primary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-secondary/30 hover:bg-primary/40 group">
                 <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{problem.icon}</div>
@@ -102,29 +104,29 @@ function Hyperflexai() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="group relative overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/CaseStudies/hyperfleex.jpg"
-                alt="Person using Hyperflx for academic search"
+                src="/CaseStudies/Hirelyss1.jpg"
+                alt="Hirelysze AI interview platform interface"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Smart Academic Search</h3>
-                <p className="text-sm opacity-90 text-secondary">AI-powered research made simple</p>
+                <h3 className="text-xl font-bold mb-2">3D Virtual Interviewer</h3>
+                <p className="text-sm opacity-90 text-secondary">Lifelike AI-powered conversations</p>
               </div>
             </div>
             
             <div className="group relative overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src="/CaseStudies/hyperflx2.jpg"
-                alt="Hyperflx displaying academic media results"
+                src="/CaseStudies/Hirelyss.jpg"
+                alt="Hirelysze recruiter dashboard"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
               <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Visual Learning</h3>
-                <p className="text-sm opacity-90 text-secondary">Rich media for better understanding</p>
+                <h3 className="text-xl font-bold mb-2">Real-Time Analytics</h3>
+                <p className="text-sm opacity-90 text-secondary">Data driven candidate insights</p>
               </div>
             </div>
           </div>
@@ -142,24 +144,19 @@ function Hyperflexai() {
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
                   <FaBullseye className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">Our Smarter Search Strategy</h3>
+                <h3 className="text-3xl font-bold text-white">Our Smarter Interview Solution</h3>
               </div>
               
               <p className="text-white/90 mb-6 text-lg">
-                <span className="text-secondary font-medium">Hyperflx</span> is built to solve those problems using a focused, AI-driven approach:
+                <span className="text-secondary font-medium">Hirelysze</span> simplifies the recruitment process with an intelligent AI interviewer, a 3D virtual environment, and a real time analytics dashboard. It streamlines the interview flow for recruiters and provides an engaging experience for candidates:
               </p>
               
               <div className="space-y-4">
-                <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-4 border-l-4 border-secondary">
-                  <p className="text-white/90">
-                    <span className="font-semibold text-secondary">AI-Powered Responses:</span> Hyperflx utilizes LLMs to generate answers and responses based on training data. Unlike platforms such as PerplexCity, it does not source its information from the web in real-time. However, it does gather images and videos from online sources for visual content generation.
-                  </p>
-                </div>
-                
                 {[
-                  { title: "Visual Support", desc: "Includes educational images and videos to aid understanding", icon: <FaChartBar className="text-secondary" /> },
-                  { title: "Instant Definitions", desc: "Explains complex academic terms clearly", icon: <FaLightbulb className="text-secondary" /> },
-                  { title: "Summarized Concepts", desc: "Offers easy-to-read summaries for faster learning", icon: <FaFileAlt className="text-secondary" /> }
+                  { title: "AI Interviewer", desc: "Conducts structured and conversational interviews using Natural Language Processing. Adjusts questions based on candidate responses and supports voice interactions", icon: <FaProjectDiagram className="text-secondary" /> },
+                  { title: "3D Virtual Interviewer", desc: "A lifelike 3D model acts as the interviewer avatar. AI synchronizes facial expressions, gestures, and lip movements with customizable appearance", icon: <FaTasks className="text-secondary" /> },
+                  { title: "Real Time Analysis", desc: "Evaluates tone, fluency, and clarity using speech recognition. Detects engagement through TensorFlow and FaceAPI with detailed performance scoring", icon: <FaUserClock className="text-secondary" /> },
+                  { title: "Recruiter Dashboard", desc: "Centralized platform to manage candidates with custom filters for role, AI score, emotional analysis, and skill match with visual reports", icon: <FaCalculator className="text-secondary" /> }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
@@ -182,16 +179,17 @@ function Hyperflexai() {
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4">
                   <FaHeart className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold">What Makes Our Tool Unique</h3>
+                <h3 className="text-3xl font-bold">What Makes Hirelysze Unique</h3>
               </div>
               
               <div className="space-y-4 relative z-10">
                 {[
-                  { title: "Distraction-Free Learning", desc: "No ads or unrelated links", icon: <FaBullseye className="text-primary" /> },
-                  { title: "Simplified Research Experience", desc: "Get to the point quickly", icon: <FaBolt className="text-primary" /> },
-                  { title: "Visual Learning Friendly", desc: "Diagrams and videos for a better grasp", icon: <FaImage className="text-primary" /> },
-                  { title: "Academic Accuracy Guaranteed", desc: "Built for students and educators", icon: <FaGraduationCap className="text-primary" /> },
-                  { title: "Clean and Easy Interface", desc: "Simple to search, read, and explore", icon: <FaPalette className="text-primary" /> }
+                  { title: "Efficiency", desc: "Automates and accelerates early stage interviews", icon: <FaLock className="text-primary" /> },
+                  { title: "Consistency", desc: "Delivers objective and uniform evaluations across all candidates", icon: <FaChartBar className="text-primary" /> },
+                  { title: "Scalability", desc: "Handles hundreds of interviews simultaneously", icon: <FaClock className="text-primary" /> },
+                  { title: "Candidate Experience", desc: "Provides an engaging, personalized, and realistic interview experience", icon: <FaHandshake className="text-primary" /> },
+                  { title: "Bias Reduction", desc: "Uses AI evaluation instead of human subjectivity", icon: <FaFileInvoiceDollar className="text-primary" /> },
+                  { title: "Deep Insights", desc: "Combines TensorFlow and FaceAPI to deliver behavioral and emotional intelligence", icon: <FaChartLine className="text-primary" /> }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-primary/10 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
@@ -218,16 +216,16 @@ function Hyperflexai() {
                 Development Process
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">
-                From Idea to Launch: How We Did It Fast
+                From Concept to Intelligent Interviewing
               </h3>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               {[
-                { title: "Pre-trained Language Models", desc: "Saved time on training from scratch", icon: <FaRobot className="text-secondary" /> },
-                { title: "API Integrations", desc: "Connected to real-time academic sources", icon: <FaLink className="text-secondary" /> },
-                { title: "User Feedback Testing", desc: "Refined through real student/teacher input", icon: <FaUsers className="text-secondary" /> },
-                { title: "CI/CD Automation", desc: "Enabled fast updates and scalable improvements", icon: <FaCogs className="text-secondary" /> }
+                { title: "AI and ML Integration", desc: "Integrated advanced NLP and TensorFlow models for real time voice and expression analysis", icon: <FaPuzzlePiece className="text-secondary" /> },
+                { title: "3D Modeling and Animation", desc: "Developed lifelike avatars with synchronized movements and expressions", icon: <FaCogs className="text-secondary" /> },
+                { title: "API Connectivity", desc: "Enabled smooth integration with HR and ATS systems", icon: <FaCommentDots className="text-secondary" /> },
+                { title: "Testing and Feedback", desc: "Improved the platform using feedback from recruiters and HR professionals", icon: <FaSyncAlt className="text-secondary" /> }
               ].map((item, index) => (
                 <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
@@ -235,12 +233,6 @@ function Hyperflexai() {
                   <p className="text-white/80 text-sm">{item.desc}</p>
                 </div>
               ))}
-            </div>
-            
-            <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-secondary">
-              <p className="text-white/90 text-lg">
-                <span className="font-semibold text-secondary">Result:</span> It helped us launch ahead of schedule, without compromising quality.
-              </p>
             </div>
             
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
@@ -253,14 +245,14 @@ function Hyperflexai() {
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none"></div>
             
             <h3 className="text-4xl font-bold mb-6 relative z-10">
-              Final Thoughts: A Better Future for Learning
+              The Future of AI Interviews
             </h3>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto mb-8 text-primary/90 relative z-10">
-              <span className="font-medium">Hyperflx</span> makes academic research smarter, simpler, and more student-friendly. It allows users to filter out irrelevant information, grasp complex concepts more quickly, and learn in a style that suits them best.
+              <span className="font-medium">Hirelysze</span> redefines recruitment by combining AI intelligence, emotional analytics, and 3D simulation to create a fair and immersive interview process. It transforms candidate evaluation into a data driven experience that saves time and improves accuracy.
             </p>
             <div className="bg-primary/20 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto relative z-10 border border-primary/30">
               <p className="text-lg font-medium">
-                It's not just a search engine—it's a reliable learning partner built for the future of education.
+               Faster screening, consistent results, and an immersive interview experience for every candidate.
               </p>
             </div>
           </div>
@@ -287,4 +279,4 @@ function Hyperflexai() {
   )
 }
 
-export default Hyperflexai
+export default HirelyszsAi;
