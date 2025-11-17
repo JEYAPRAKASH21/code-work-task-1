@@ -17,9 +17,7 @@ const Blog16 = () => {
     { id: "choosing-the-right-model", title: "Choosing the Right Model" },
     { id: "deep-learning-use-cases", title: "Deep Learning Use Cases" },
     { id: "deep-learning-in-industry", title: "Deep Learning in Industry Applications" },
-    { id: "conclusion", title: "Conclusion" },
-    { id: "algorithms-to-agents", title: "Algorithms to Agents" },
-  
+    { id: "conclusion", title: "Conclusion" },  
   ];
 
   // Smooth scroll to section
@@ -121,7 +119,7 @@ const Blog16 = () => {
         <div className="flex-1 max-w-4xl">
           {/* TITLE */}
           <h1 className="text-5xl font-extrabold text-secondary mb-8 drop-shadow-glow">
-            Deep Learning
+         What is  Deep Learning
           </h1>
 
           {/* FEATURE IMAGE */}
@@ -258,59 +256,6 @@ const Blog16 = () => {
             <p className="text-white/80 leading-relaxed mb-10">
               With deep learning, the complexity of data can be handled across sectors with remarkable capability—driving innovation. From pattern identification to smart predictions, it empowers businesses to automate and optimize like never before. Understanding deep learning, the available models, and application areas helps organizations decide how to use it to stay competitive.
             </p>
-          </section>
-
-          <section id="algorithms-to-agents" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Algorithms to Agents</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Artificial intelligence in the 21st century spans from famous language models to independent systems that solve complex problems, driving global economic and societal changes. This brief history traces the beginnings and key revolutions of the field.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">What It Was Like Before</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              The phrase “artificial intelligence” was first used at the Dartmouth Conference in 1956, envisioning machines capable of reasoning, learning, and problem-solving. Early systems relied on rule-based, symbolic reasoning—effective for well-defined problems like chess—but struggled with ambiguity and complexity. The 1980s and 90s saw the rise of machine learning, where algorithms learned patterns from data rather than following handcrafted rules; yet AI remained constrained by computational limits and data.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">The Deep Learning Era</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Neural networks existed for decades, but the 2010s unlocked their potential thanks to GPU advances and large datasets. In 2017, the paper “Attention Is All You Need” introduced transformers—an architecture that processes data in parallel rather than sequentially like RNNs, enabling faster and more capable sequence modeling. The attention mechanism let models focus on the most relevant parts of input, opening new applications in NLP.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">Big Language Models Become Popular</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Transformers led to GPT—Generative Pre-trained Transformers. GPT-2 and GPT-3 demonstrated humanlike text generation, showing AI’s ability to grasp context and assist in tasks from drafting emails to writing code. Open-source initiatives like Hugging Face’s Transformers library accelerated global experimentation, while closed-source models like GPT-4 and Claude 3.5 Sonnet highlighted the growing resource needs of state-of-the-art development.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">From Language Models to Agents</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              We now have autonomous agents that operate within environments. With tools like LangChain and LlamaIndex and frameworks such as Function Calling, models interact with APIs, databases, and other systems—reasoning, planning, and adapting their actions based on feedback.
-            </p>
-            <p className="text-white/80 leading-relaxed mb-6">Capabilities of AI agents include:</p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-2">
-              <li>Managing and booking travel</li>
-              <li>Debugging and creating complete software programs</li>
-              <li>Conducting research, design, and problem-solving with human guidance</li>
-            </ul>
-            <p className="text-white/80 leading-relaxed mb-6">
-              This marks a move toward more general AI—systems that initiate significant actions, not just answer questions.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">Open vs. Closed: Two Paradigms</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Open-source models like LLaMA and OpenAssistant emphasize accessibility and collaboration, fueling innovation, experimentation, and transparency. Closed-source counterparts push capabilities further while focusing on stability, safety, and scalability for enterprise needs.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">The AI Ecosystem Now</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              The ecosystem is diverse and dynamic—proprietary giants like OpenAI and Google; open-source leaders like Hugging Face and Meta; and frameworks that enable real-world implementations. A recent trend is reasoning models.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">Reasoning Models</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              These focus on logical reasoning and structured problem-solving, including chain-of-thought explanations, self-reflective models that critique their outputs, and tree-of-thought frameworks for complex multi-step tasks. Examples include o1-preview, f-1-preview, and R-lite-preview—showcasing progress in planning and reasoning.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">Where Are We Heading?</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              The future features multimodal models like GPT-4 and Gemini that understand text and images, increasing AI presence in daily life—from personalized assistants to autonomous vehicles. Ethics and regulation remain crucial to ensure responsible use.
-            </p>
-            <h3 className="text-xl font-semibold text-white mb-2">Final Thoughts</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
-              From symbolic reasoning in the 1950s to autonomous agents reshaping industries today, AI has progressed through deep learning, transformers, and large language models. As breakthroughs continue, the question becomes not “what can AI do?” but “how can we use its power responsibly?” The future is about systems that enhance human capabilities while ensuring fairness, transparency, and inclusiveness.
-            </p>
-            <p className="text-white/80 leading-relaxed mb-10">We should take this journey further.</p>
           </section>
 
           {/* SECTION: Internal Link */}
