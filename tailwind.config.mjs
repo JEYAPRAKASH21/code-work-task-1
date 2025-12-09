@@ -16,7 +16,7 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#050c25',
+        primary:  '#050c25',
         secondary: '#1ddfea',
       },
       keyframes: {
