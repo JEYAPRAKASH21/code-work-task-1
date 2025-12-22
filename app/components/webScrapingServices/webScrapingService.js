@@ -3,7 +3,7 @@ import React from 'react'
 
 function WebScrapingService() {
   return (
-    <div className="relative bg-primary min-h-screen overflow-hidden">
+    <div className="relative bg-secondary min-h-screen overflow-hidden">
       
       {/* ==== Background Decorative Circles ==== */}
       <div className="absolute inset-0 opacity-10">
@@ -27,10 +27,10 @@ function WebScrapingService() {
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Web data extraction
           </div>
-          <h2 className="text-5xl font-bold text-white mb-6">
+          <h2 className="text-5xl font-bold text-primary mb-6">
             Introduction: <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary text-transparent bg-clip-text">Why Data Matters for Businesses</span>
           </h2>
-          <p className="text-white/90 leading-relaxed border-l-4 border-secondary/40 pl-4 max-w-4xl">
+          <p className="text-primary/90 leading-relaxed border-l-4 border-secondary/40 pl-4 max-w-4xl">
             In today’s digital world, data is the key to growth. Whether you’re tracking competitors, finding leads, or understanding market trends — 
             having the right information at the right time gives your business a strong edge. Web data extraction is a smart way to collect this data quickly 
             and accurately, just like having a 24/7 digital assistant.
@@ -39,27 +39,27 @@ function WebScrapingService() {
 
         {/* ==== CHALLENGES ==== */}
         <div className="mb-12">
-          <h3 className="text-3xl font-bold text-white mb-4">Challenges: The Problem with Manual Data Collection</h3>
-          <ul className="space-y-3 text-white/90 pl-4 border-l-4 border-secondary/40">
+          <h3 className="text-3xl font-bold text-primary mb-4">Challenges: The Problem with Manual Data Collection</h3>
+          <ul className="space-y-3 text-primary/90 pl-4 border-l-4 border-secondary/40">
             <li>Time-consuming research</li>
             <li>Outdated or incomplete information</li>
             <li>Difficulty keeping up with competitor moves</li>
             <li>Limited visibility into customer behavior and market trends</li>
           </ul>
-          <p className="mt-4 text-white/90">
+          <p className="mt-4 text-primary/90">
             Manually searching and copying data from websites slows down your business and increases errors.
           </p>
         </div>
 
         {/* ==== STRATEGIC SHIFT ==== */}
         <div className="mb-12">
-          <h3 className="text-3xl font-bold text-white mb-4">Strategic Shift: Moving to Smart Data Collection</h3>
-          <p className="text-white/90 mb-4">
+          <h3 className="text-3xl font-bold text-primary mb-4">Strategic Shift: Moving to Smart Data Collection</h3>
+          <p className="text-primary/90 mb-4">
             To overcome these challenges, we adopted custom web data extraction tools that automate the entire process. Instead of wasting hours, we now get accurate 
             data in minutes — in formats like Excel or CSV — ready for use in decision-making.
           </p>
           <h4 className="text-xl font-bold text-secondary mb-2">How It Works:</h4>
-          <ul className="space-y-2 text-white/90 pl-4 border-l-4 border-secondary/40">
+          <ul className="space-y-2 text-primary/90 pl-4 border-l-4 border-secondary/40">
             <li>Define what data you need (e.g., product prices, leads, reviews)</li>
             <li>Build a scraper to pull that data from specific websites</li>
             <li>Schedule it to run daily, weekly, or monthly</li>
@@ -79,8 +79,8 @@ function WebScrapingService() {
                 alt={img.caption}
                 className="w-[400px] h-[300px] object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent"></div>
-              <div className="absolute bottom-4 left-4 text-white">
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-primary">
                 <h3 className="text-lg font-bold">{img.caption}</h3>
               </div>
               <div className="absolute inset-0 border-2 border-secondary/30 rounded-3xl group-hover:border-secondary/50 transition-all"></div>
@@ -90,9 +90,9 @@ function WebScrapingService() {
 
         {/* ==== BENEFITS ==== */}
         <div className="mb-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl hover:bg-primary/50 transition">
-            <h3 className="text-3xl font-bold text-white mb-6">Benefits of In-House Web data extraction Solutions</h3>
-            <ul className="space-y-3 text-white/90">
+          <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 border border-primary/20 shadow-2xl hover:bg-secondary/40 transition">
+            <h3 className="text-3xl font-bold text-primary mb-6">Benefits of In-House Web data extraction Solutions</h3>
+            <ul className="space-y-3 text-primary/90">
               <li>Customize data output as per team needs</li>
               <li>Save costs by avoiding third-party data services</li>
               <li>Scale data collection for multiple websites</li>
@@ -100,9 +100,9 @@ function WebScrapingService() {
             </ul>
           </div>
           {/* ==== TECH STACK ==== */}
-          <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl hover:bg-primary/50 transition">
-            <h3 className="text-3xl font-bold text-white mb-6">Technology Stack Used</h3>
-            <ul className="space-y-3 text-white/90">
+          <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 border border-primary/20 shadow-2xl hover:bg-secondary/40 transition">
+            <h3 className="text-3xl font-bold text-primary mb-6">Technology Stack Used</h3>
+            <ul className="space-y-3 text-primary/90">
               <li><span className="text-secondary font-medium">Python</span> – for building scraping scripts</li>
               <li><span className="text-secondary font-medium">BeautifulSoup & Scrapy</span> – to extract and clean data</li>
               <li><span className="text-secondary font-medium">Pandas</span> – for data formatting</li>
@@ -114,23 +114,23 @@ function WebScrapingService() {
 
         {/* ==== RESULTS ==== */}
         <div className="mb-12">
-          <h3 className="text-3xl font-bold text-white mb-4">Fast-Tracking Development & Results</h3>
-          <ul className="space-y-3 text-white/90 pl-4 border-l-4 border-secondary/40">
+          <h3 className="text-3xl font-bold text-primary mb-4">Fast-Tracking Development & Results</h3>
+          <ul className="space-y-3 text-primary/90 pl-4 border-l-4 border-secondary/40">
             <li>Setup time reduced by 60%</li>
             <li>Scraping accuracy improved by 2x</li>
             <li>Data ready for marketing, sales, and analytics teams within hours</li>
           </ul>
-          <p className="mt-4 text-white/90">
+          <p className="mt-4 text-primary/90">
             This helped different departments work with real-time data instead of outdated reports.
           </p>
         </div>
 
         {/* ==== CONCLUSION ==== */}
         <div className="mt-16">
-          <div className="bg-gradient-to-r from-primary/90 to-primary rounded-3xl p-12 shadow-2xl text-white relative overflow-hidden border border-white/20">
+          <div className="bg-gradient-to-r from-secondary/90 to-secondary rounded-3xl p-12 shadow-2xl text-primary relative overflow-hidden border border-primary/20">
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
             <h3 className="text-4xl font-bold mb-8">Conclusion: Smarter Decisions Start with Better Data</h3>
-            <p className="text-xl font-light leading-relaxed text-white/90">
+            <p className="text-xl font-light leading-relaxed text-primary/90">
               Web data extraction is no longer optional — it’s a must-have tool for data-driven businesses. 
               By switching to automated, in-house scraping, we saved time, cut costs, and made faster, smarter decisions. 
               Whether you're a startup or an enterprise, having real-time web data can give you a competitive edge in any industry.

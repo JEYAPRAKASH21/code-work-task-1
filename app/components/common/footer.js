@@ -44,11 +44,11 @@ const Footer = () => {
 
   const quickLinks = [
     { href: "/about-us", label: "About Us" },
-    { href: "/event-updates", label: "Events" },
+    { href: "/contact-ai-solutions", label: "Contact Us" },
   ];
 
   const contactLinks = [
-    { href: "/contact-ai-solutions", label: "Contact Us" },
+    { href: "https://cplc.codework.ai/courses", label: "Learn with Us" },
     { href: "/build-your-career-with-codework", label: "Our Products" },
   ];
 
@@ -224,7 +224,7 @@ const Footer = () => {
           {/* Get In Touch */}
           <div>
             <h3 className="text-base  sm:text-lg font-semibold mb-12 sm:mb-12 text-primary">
-              Get Started
+              Contact Us
             </h3>
             <div className="mb-3 sm:mb-4">
               <p className="text-xs sm:text-sm text-primary/90">+91 81481 01923</p>

@@ -188,7 +188,7 @@ export default function Navbar() {
           description: "Browse 100 practical AI automation ideas",
         },
           {
-          href: "/contact-ai-solution",
+          href: "/contact-ai-solutions",
           label: "Contact Us",
           icon: IoMailOutline,
           description: "Get in touch with us for more information",

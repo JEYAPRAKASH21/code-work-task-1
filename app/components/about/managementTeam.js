@@ -39,7 +39,7 @@ const ManagementTeam = () => {
       name: 'Sainath Haridass',
       title: 'Vice President of Growth & Delivery',
       imgSrc: 'https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/our_team/sainathH.jpg',
-      linkedinUrl: 'https://www.linkedin.com/in/sainath-haridass-90438319/'
+      linkedinUrl: 'https://www.linkedin.com/in/sainath27/'
     },
   ];
 

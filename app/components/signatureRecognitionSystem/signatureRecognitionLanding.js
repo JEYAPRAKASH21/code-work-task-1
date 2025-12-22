@@ -3,7 +3,7 @@ import React from 'react'
 
 const SignatureRecognitionLanding = () => {
   return (
-    <section className="relative bg-primary w-full pl-36 py-36 overflow-hidden">
+    <section className="relative bg-secondary w-full pl-36 py-36 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
@@ -22,21 +22,21 @@ const SignatureRecognitionLanding = () => {
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 relative z-10">
         {/* Enhanced Text Card with Brand Colors */}
-        <div className="md:w-5/12 bg-gradient-to-br from-primary/40 via-primary/60 to-primary/80 backdrop-blur-xl border border-white/20 p-8 pb-6 rounded-3xl text-white z-20 -mr-28 md:-mr-32 self-end shadow-2xl shadow-secondary/25 hover:scale-105 transition-all duration-500 relative overflow-hidden">
+        <div className="md:w-5/12 bg-gradient-to-br from-secondary/40 via-secondary/60 to-secondary/80 backdrop-blur-xl border border-primary/20 p-8 pb-6 rounded-3xl text-primary z-20 -mr-28 md:-mr-32 self-end shadow-2xl shadow-secondary/25 hover:scale-105 transition-all duration-500 relative overflow-hidden">
           
           {/* Corner Decorations */}
           <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
           <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
           
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-primary/5 backdrop-blur-sm mb-6">
             <span className="text-secondary text-sm font-medium">— Signature Verification Technology —</span>
           </div>
 
           {/* Enhanced Heading with Gradient Text */}
           <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
             Advanced{" "}
-            <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">
               Handwritten Signature
             </span>{" "}
             Recognition System
@@ -48,8 +48,8 @@ const SignatureRecognitionLanding = () => {
           {/* Enhanced Paragraph */}
           <div className="relative">
             <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full"></div>
-            <p className="text-base md:text-lg w-[90%] leading-relaxed text-white/90 pl-6 font-light">
-              The <span className="text-secondary font-medium">Handwritten Signature Recognition System</span> is an innovative solution tailored for verifying handwritten signatures through sophisticated techniques like <span className="text-secondary font-medium">template matching</span> and <span className="text-secondary font-medium">correlation</span>. Employing advanced <span className="text-secondary font-medium">image processing methods</span>, this system ensures accurate authentication by comparing input signatures with a comprehensive database of existing samples.
+            <p className="text-base md:text-lg w-[90%] leading-relaxed text-primary/90 pl-6 font-light">
+              The <span className="text-primary font-medium">Handwritten Signature Recognition System</span> is an innovative solution tailored for verifying handwritten signatures through sophisticated techniques like <span className="text-secondary font-medium">template matching</span> and <span className="text-secondary font-medium">correlation</span>. Employing advanced <span className="text-secondary font-medium">image processing methods</span>, this system ensures accurate authentication by comparing input signatures with a comprehensive database of existing samples.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ const SignatureRecognitionLanding = () => {
           <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
           
           {/* Subtle pattern overlay */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/5 to-transparent pointer-events-none"></div>
         </div>
 
         {/* Enhanced Full-cover Image */}
@@ -71,17 +71,17 @@ const SignatureRecognitionLanding = () => {
             />
             
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-secondary/20 group-hover:from-primary/20 group-hover:to-secondary/30 transition-all duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-secondary/30 via-transparent to-secondary/20 group-hover:from-secondary/20 group-hover:to-secondary/30 transition-all duration-500"></div>
             
             {/* Floating tech elements */}
             <div className="absolute top-4 right-4 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-float">
-              <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
             
             <div className="absolute bottom-4 left-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-pulse">
-              <svg className="w-3 h-3 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
             </div>
