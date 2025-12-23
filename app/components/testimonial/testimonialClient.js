@@ -1,12 +1,88 @@
 "use client";
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 const TestimonialClient = () => {
+  const testimonials = useMemo(
+    () => [
+      {
+        name: "Johnson R",
+        role: "Delivery Manager – WebSignX Technologies",
+        avatar: "/testimonial/Testimonials1.svg",
+        quote:
+          "The Codework team demonstrated exceptional expertise by collaborating in developing our ticket booking application project. Their attention to detail, seamless integration of features, and commitment to meeting deadlines made this project a success. We are thoroughly impressed with their technical proficiency and look forward to future collaborations.",
+      },
+      {
+        name: "Bikram Bakshi",
+        role: "Entrepreneur & Tech Innovator",
+        avatar: "/testimonial/Testimonials2.svg",
+        quote:
+          "It's rare to find partners who go above and beyond their scope of work. Your proactive thinking and self-initiative in providing insightful ideas have truly elevated our product to new heights. The innovative contributions you've made, coupled with your commitment to understanding our vision, have played a pivotal role in shaping the product into what it is today.",
+      },
+      {
+        name: "Johnson R",
+        role: "Entrepreneur & Tech Innovator",
+        avatar: "/testimonial/Testimonials3.svg",
+        quote:
+          "We are extremely pleased with the Codework team's exceptional work in developing our website. Their technical expertise, attention to detail, and seamless execution exceeded our expectations. From design to functionality, they ensured that every aspect was well-integrated and user-friendly. Their commitment to meeting deadlines and delivering high-quality results made this project a great success. We look forward to collaborating with them again on future projects.",
+      },
+      {
+        name: "Lovio Team",
+        role: "Entrepreneur & Tech Innovator",
+        avatar: "/testimonial/lovioo.svg",
+        quote:
+          "Partnering with CODEWORK has completely transformed the way we run our e-commerce dropshipping business. Their AI-powered automation solutions simplified our market research process and gave us valuable insights that used to take days to gather. The seamless sales platform integration they built has not only saved us time but also helped us scale with efficiency. With CODEWORK’s expertise, we feel truly empowered to focus on growth while technology takes care of the complexities. A real game-changer for Lovio!",
+      },
+    ],
+    []
+  );
+  const [active, setActive] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActive((a) => (a + 1) % testimonials.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [testimonials.length]);
+  const prevIndex = (active - 1 + testimonials.length) % testimonials.length;
+  const nextIndex = (active + 1) % testimonials.length;
+  const renderCard = (t, position) => {
+    const isCenter = position === "center";
+    const translate =
+      position === "left"
+        ? "translate(-150%, 0)"
+        : position === "right"
+        ? "translate(50%, 0)"
+        : "translate(-50%, 0)";
+    const scale = isCenter ? 1.12 : 0.88;
+    const z = isCenter ? 30 : 20;
+    const opacity = isCenter ? 1 : 0.9;
+    return (
+      <div
+        className="absolute left-1/2 top-0 sm:top-2 md:top-4 lg:top-6 w-[90%] sm:w-[75%] md:w-[60%] xl:w-[720px]"
+        style={{
+          transform: `${translate} scale(${scale})`,
+          transition: "transform 600ms ease, opacity 600ms ease",
+          zIndex: z,
+          opacity,
+        }}
+      >
+        <div className="relative">
+          <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 rounded-full ring-4 ring-white shadow-xl overflow-hidden bg-white">
+            <img src={t.avatar} alt={t.name} className="w-full h-full object-cover" />
+          </div>
+          <div className="bg-white text-primary rounded-2xl shadow-2xl border border-white/60 p-6 sm:p-8 md:p-10">
+            <div className="pt-6 sm:pt-8 md:pt-10 text-center">
+              <h3 className="text-xl sm:text-2xl font-bold">{t.name}</h3>
+              <p className="text-sm sm:text-base text-gray-500 mt-1">{t.role}</p>
+            </div>
+            <p className="text-gray-700 leading-relaxed mt-6 sm:mt-8 italic text-center">{t.quote}</p>
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="bg-primary text-secondary relative overflow-hidden px-6 md:py-20  space-y-20">
-
-      {/* Section Header */}
-      <div className="text-center mb-20 relative z-10">        
+      <div className="text-center mb-20 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
           <span className="text-secondary">What Our </span>
           <span className="text-secondary">
@@ -16,9 +92,39 @@ const TestimonialClient = () => {
         
         <div className="w-20 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mx-auto"></div>
       </div>
+      <div className="relative max-w-7xl mx-auto h-[500px] sm:h-[540px] md:h-[580px]">
+        {renderCard(testimonials[(active - 1 + testimonials.length) % testimonials.length], "left")}
+        {renderCard(testimonials[active], "center")}
+        {renderCard(testimonials[(active + 1) % testimonials.length], "right")}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3 z-40">
+          <button
+            aria-label="Previous testimonial"
+            onClick={() => setActive((active - 1 + testimonials.length) % testimonials.length)}
+            className="bg-white/20 backdrop-blur-sm border border-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/30 transition"
+          >
+            ‹
+          </button>
+          <div className="flex items-center gap-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                aria-label={`Go to testimonial ${i + 1}`}
+                onClick={() => setActive(i)}
+                className={`w-2.5 h-2.5 rounded-full transition ${i === active ? "bg-white" : "bg-white/50"}`}
+              />
+            ))}
+          </div>
+          <button
+            aria-label="Next testimonial"
+            onClick={() => setActive((active + 1) % testimonials.length)}
+            className="bg-white/20 backdrop-blur-sm border border-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/30 transition"
+          >
+            ›
+          </button>
+        </div>
+      </div>
 
-      {/* First Testimonial (Left Image) */}
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-16 max-w-7xl mx-auto relative z-10">
+      <div className="hidden">
         {/* Enhanced Left Image Container */}
         <div className="relative flex items-center justify-center group">
           {/* Outer Glow Ring */}
@@ -51,7 +157,6 @@ const TestimonialClient = () => {
           
         </div>
 
-        {/* Right Testimonial Box */}
         <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-secondary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
   
 
@@ -80,9 +185,7 @@ const TestimonialClient = () => {
         </div>
       </div>
 
-      {/* Second Testimonial (Right Image) */}
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16 max-w-7xl mx-auto relative z-10">
-        {/* Left Testimonial Box */}
+      <div className="hidden">
         <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-secondary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
 
           <p className="text-lg leading-relaxed text-secondary/90 mb-6 italic">
@@ -108,7 +211,6 @@ const TestimonialClient = () => {
           <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
         </div>
 
-        {/* Enhanced Right Image Container with Hexagonal Design */}
         <div className="relative flex items-center justify-center group">
           {/* Outer Pulse Effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-secondary/25 to-secondary/35 rounded-full blur-3xl scale-110 opacity-70 group-hover:scale-125 animate-pulse transition-all duration-700"></div>
@@ -154,9 +256,7 @@ const TestimonialClient = () => {
         </div>
       </div>
 
-      {/* Third Testimonial (Left Image) */}
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-16 max-w-7xl mx-auto relative z-10">
-        {/* Enhanced Left Image Container with Modern Card Design */}
+      <div className="hidden">
         <div className="relative flex items-center justify-center group">
           {/* Background Glow */}
           <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-primary/50 rounded-3xl blur-3xl scale-110 opacity-60 group-hover:scale-120 transition-all duration-700"></div>
@@ -199,7 +299,6 @@ const TestimonialClient = () => {
           <div className="absolute -right-4 top-1/3 w-8 h-16 bg-gradient-to-l from-secondary/15 to-transparent rounded-l-full"></div>
         </div>
 
-        {/* Right Testimonial Box */}
         <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-secondary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
 
           <p className="text-lg leading-relaxed text-secondary/90 mb-6 italic">
@@ -223,9 +322,7 @@ const TestimonialClient = () => {
         </div>
       </div>
 
-      {/* third Testimonial (Right Image) */}
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16 max-w-7xl mx-auto relative z-10">
-        {/* Left Testimonial Box */}
+      <div className="hidden">
         <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-white p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-primary/30 transition-all duration-500 relative">
 
           <p className="text-lg leading-relaxed text-secondary/90 mb-6 italic">
