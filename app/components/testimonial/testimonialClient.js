@@ -7,14 +7,14 @@ const TestimonialClient = () => {
       {
         name: "Johnson R",
         role: "Delivery Manager – WebSignX Technologies",
-        avatar: "/testimonial/Testimonials1.svg",
+        avatar: "/testimonial/webmainlogo.png",
         quote:
           "The Codework team demonstrated exceptional expertise by collaborating in developing our ticket booking application project. Their attention to detail, seamless integration of features, and commitment to meeting deadlines made this project a success. We are thoroughly impressed with their technical proficiency and look forward to future collaborations.",
       },
       {
         name: "Bikram Bakshi",
         role: "Entrepreneur & Tech Innovator",
-        avatar: "/testimonial/Testimonials2.svg",
+        avatar: "/testimonial/cwmainlogo.png",
         quote:
           "It's rare to find partners who go above and beyond their scope of work. Your proactive thinking and self-initiative in providing insightful ideas have truly elevated our product to new heights. The innovative contributions you've made, coupled with your commitment to understanding our vision, have played a pivotal role in shaping the product into what it is today.",
       },
@@ -28,7 +28,7 @@ const TestimonialClient = () => {
       {
         name: "Lovio Team",
         role: "Entrepreneur & Tech Innovator",
-        avatar: "/testimonial/lovioo.svg",
+        avatar: "/testimonial/loviomainlogo.png",
         quote:
           "Partnering with CODEWORK has completely transformed the way we run our e-commerce dropshipping business. Their AI-powered automation solutions simplified our market research process and gave us valuable insights that used to take days to gather. The seamless sales platform integration they built has not only saved us time but also helped us scale with efficiency. With CODEWORK’s expertise, we feel truly empowered to focus on growth while technology takes care of the complexities. A real game-changer for Lovio!",
       },
