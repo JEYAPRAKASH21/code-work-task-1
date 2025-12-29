@@ -39,7 +39,7 @@ const ContactLanding = () => {
     if (!formData.first_name) newErrors.first_name = "First name is required";
     if (!formData.last_name) newErrors.last_name = "Last name is required";
     if (!formData.email) newErrors.email = "Email is required";
-    if (!formData.referral) newErrors.referral = "This field is required";
+    if (!formData.referral) newErrors.referral = "This message is required";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
