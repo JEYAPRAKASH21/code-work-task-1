@@ -71,7 +71,7 @@ function SignatureOverView() {
           <h3 className="text-3xl font-bold text-primary mb-4">Strategic Shift</h3>
           <p className="text-primary/90 border-l-4 border-secondary/40 pl-4 max-w-4xl">
             To solve these problems, we moved from manual verification to a fully automated system powered by 
-            <span className="text-secondary font-medium"> OpenCV-based image processing</span>. It uses correlation-based matching 
+            <span className="text-primary font-medium"> OpenCV-based image processing</span>. It uses correlation-based matching 
             methods to check authenticity, eliminating subjective human decisions and making verification faster, more consistent, 
             and highly efficient.
           </p>
@@ -96,10 +96,10 @@ function SignatureOverView() {
           <div className="bg-secondary/70 backdrop-blur-xl rounded-3xl p-8 border border-primary/20 shadow-2xl transition hover:bg-secondary/80">
             <h3 className="text-3xl font-bold text-primary mb-6">Technology Stack Used</h3>
             <ul className="text-primary/90 space-y-3 list-disc list-inside">
-              <li><span className="text-secondary font-medium">OpenCV</span> – Image processing & template matching</li>
+              <li><span className="text-primary font-medium">OpenCV</span> – Image processing & template matching</li>
               <li>Correlation coefficient algorithms for accuracy scoring</li>
               <li>Structured signature database for reliable comparison</li>
-              <li><span className="text-secondary font-medium">Python</span> – Backend automation and processing</li>
+              <li><span className="text-primary font-medium">Python</span> – Backend automation and processing</li>
             </ul>
           </div>
         </div>

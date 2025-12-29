@@ -32,7 +32,7 @@ const SoftwareServices = () => {
       heading: 'Cloud & DevOps Solutions',
       description: 'Modernize your infrastructure with cloud-native architectures and DevOps practices. We help you achieve faster deployment cycles, improved reliability, and optimal resource utilization across your technology stack.',
       buttonText: 'Optimize Infrastructure',
-      buttonLink: 'https://codework.ai//cloud-computing'
+      buttonLink: 'https://codework.ai/cloud-computing'
     },
     'ai-certification': {
       title: 'AI Certification',
