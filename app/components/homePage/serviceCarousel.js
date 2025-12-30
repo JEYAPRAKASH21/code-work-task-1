@@ -54,26 +54,28 @@ const AIKeynoteCarousel = () => {
             <div
               ref={topNavContainerRef}
               className="flex gap-3 items-center overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar no-scroll-chaining"
-              onMouseEnter={() => setIsInteracting(true)}
-              onMouseLeave={() => setIsInteracting(false)}
               onTouchStart={() => setIsInteracting(true)}
               onTouchEnd={() => setIsInteracting(false)}
             >
               {topics.map((svc, idx) => (
-                <Link key={idx} href={svc.link}>
-                  <button
-                    ref={(el) => (topBtnRefs.current[idx] = el)}
-                    onMouseEnter={() => { scrollBehaviorRef.current = 'smooth'; setActiveIndex(idx); }}
-                    onClick={() => { scrollBehaviorRef.current = 'smooth'; setActiveIndex(idx); }}
-                    className={`px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium transition-all duration-300 border ${
-                      idx === activeIndex
-                        ? 'bg-primary text-secondary border-secondary/20'
-                        : 'bg-secondary/70 text-primary/70 hover:bg-secondary/60 border-primary/20 hover:border-primary/30'
-                    }`}
-                  >
-                    {svc.title}
-                  </button>
-                </Link>
+                <div
+                  key={idx}
+                  role="button"
+                  ref={(el) => (topBtnRefs.current[idx] = el)}
+                  onMouseEnter={() => setIsInteracting(true)}
+                  onMouseLeave={() => setIsInteracting(false)}
+                  onClick={() => {
+                    scrollBehaviorRef.current = 'smooth';
+                    setActiveIndex(idx);
+                  }}
+                  className={`cursor-pointer px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium transition-all duration-300 border ${
+                    idx === activeIndex
+                      ? 'bg-primary text-secondary border-secondary/20'
+                      : 'bg-secondary/70 text-primary/70 hover:bg-secondary/60 border-primary/20 hover:border-primary/30'
+                  }`}
+                >
+                  {svc.title}
+                </div>
               ))}
             </div>
           </div>
@@ -129,20 +131,20 @@ const AIKeynoteCarousel = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scroll-chaining {
+          overscroll-behavior: contain;
+        }
+      `}</style>
     </div>
   );
 };
 
 export default AIKeynoteCarousel;
-<style jsx>{`
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scroll-chaining {
-    overscroll-behavior: contain;
-  }
-`}</style>

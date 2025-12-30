@@ -4,11 +4,11 @@ import Link from "next/link";
 const Landing = () => {
   return (
     <>
-      <section className="relative w-full h-auto sm:h-[80vh] md:h-screen flex items-center justify-center bg-secondary overflow-hidden">
+      <section className="relative w-full h-auto  py-6 sm:py-7 md:py-12 flex items-center justify-center bg-secondary overflow-hidden">
       {/* Interactive 3D Background */}
       
       {/* Content Container with higher z-index */}
-      <div className="relative z-30 w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+      <div className="relative z-30 w-full max-w-4xl mx-auto">
         <div className="flex flex-col items-center justify-center">
           
           {/* Left Side - Text Content */}
