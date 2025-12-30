@@ -24,8 +24,8 @@ const ChatBotAi = () => {
     const value = typeof payload === 'string' ? payload : query
     const trimmed = value.trim()
 
-    if (!trimmed || trimmed.length < 3) {
-      setError('Please enter at least 3 characters.')
+    if (!trimmed || trimmed.length < 1) {
+      setError('Please enter a question.')
       return
     }
 
@@ -160,7 +160,7 @@ const ChatBotAi = () => {
           <button
             type="button"
             onClick={() => handleSubmit()}
-            className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-secondary text-primary text-sm font-medium hover:bg-primary/90 transition-colors"
+            className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-secondary text-primary text-sm font-medium hover:bg-gray-300 hover:text-secondary transition-colors"
           >
             Ask
           </button>

@@ -5,14 +5,6 @@ function PdfTranslator() {
   return (
     <div className="relative bg-secondary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
-        <div className="absolute top-60 right-32 w-24 h-24 md:w-32 md:h-32 bg-secondary/15 rounded-full"></div>
-        <div className="absolute bottom-40 left-1/3 w-36 h-36 md:w-48 md:h-48 bg-secondary/25 rounded-full"></div>
-        <div className="absolute top-1/3 right-1/4 w-20 h-20 md:w-24 md:h-24 bg-secondary/10 rounded-full"></div>
-        <div className="absolute top-3/4 left-1/4 w-28 h-28 bg-secondary/12 rounded-full"></div>
-        <div className="absolute bottom-20 right-1/3 w-16 h-16 bg-secondary/18 rounded-full"></div>
-      </div>
 
       {/* Floating Elements */}
       <div className="absolute inset-0 pointer-events-none">
@@ -110,7 +102,7 @@ function PdfTranslator() {
               <li>Cloud-based testing for uptime and reliability</li>
               <li>CI/CD frameworks for rapid, reliable deployment</li>
             </ul>
-            <span className="text-primary font-semibold">Result:</span> Work was completed in record time without sacrificing quality.
+            <span className="text-primary font-semibold">Result:</span> <span className="text-primary">Work was completed in record time without sacrificing quality.</span>
           </div>
         </div>
 
