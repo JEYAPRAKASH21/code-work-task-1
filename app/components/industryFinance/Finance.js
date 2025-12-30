@@ -46,8 +46,22 @@ export default function Finance() {
       
       {/* Hero Section */}
       <section className="relative bg-secondary min-h-screen overflow-hidden">
-        {/* Background overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/95 to-secondary/70 z-10"></div>
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Money.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/55 to-secondary/30 z-10" />
+        </div>
         
         {/* Background image positioned at bottom half with responsive positioning */}
         <div className="absolute bottom-0 left-[5%] sm:left-[10%] md:left-[15%] lg:left-[20%] h-1/4 sm:h-1/3 md:h-2/5 lg:h-1/2 w-[90%] sm:w-4/5 md:w-4/5 lg:w-4/5">
@@ -58,6 +72,7 @@ export default function Finance() {
             className="object-cover rounded-tl-xl sm:rounded-tl-2xl md:rounded-tl-3xl"
             priority
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/95 to-secondary/70 pointer-events-none rounded-tl-xl sm:rounded-tl-2xl md:rounded-tl-3xl" />
         </div>
 
         {/* Contact button - HIDDEN on mobile, visible from tablet up */}
