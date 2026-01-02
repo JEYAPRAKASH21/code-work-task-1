@@ -43,6 +43,20 @@ const TestimonialClient = () => {
     return () => clearInterval(timer);
   }, [testimonials.length]);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const renderCard = (t, position) => {
     const isReducedLogo =
       t.avatar === "/testimonial/cwmainlogo.png" ||
@@ -59,7 +73,7 @@ const TestimonialClient = () => {
     const scale = isCenter ? 1.12 : 0.88;
     const z = isCenter ? 30 : 20;
     const opacity = isCenter ? 1 : 0.7;
-    const visibility = isCenter ? 'visible' : window.innerWidth < 768 ? 'hidden' : 'visible';
+    const visibility = isCenter ? 'visible' : isMobile ? 'hidden' : 'visible';
     
     return (
       <div
