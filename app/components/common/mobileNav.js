@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { IoSettingsOutline, IoSparklesOutline, IoAnalyticsOutline, IoStatsChartOutline, IoChatbubbleEllipsesOutline, IoPeopleOutline, IoBookOutline, IoBriefcaseOutline, IoSchoolOutline, IoMailOutline } from "react-icons/io5";
 
 export default function MobileNavbar() {
   const pathname = usePathname();
@@ -18,20 +19,68 @@ export default function MobileNavbar() {
 
   const navLinks = [
     {
-      href: "/ai-solutions",
+      href: "",
       label: "AI Solutions",
       dropdown: [
         {
           href: "/ai-solutions",
           label: "Expertise",
+          icon: IoSettingsOutline,
+          description: "Explore AI and advanced technology expertise",
         },
         {
           href: "/ai-services",
-          label: "Service",
+          label: "Services",
+          icon: IoAnalyticsOutline,
+          description: "End-to-end AI software development services",
         },
         {
-          href: "/ai-training",
+          href: "https://cplc.codework.ai/",
           label: "AI Training Courses",
+          icon: IoSparklesOutline,
+          description: "Professional AI training courses",
+        },
+      ],
+      dropdownImage: "/navmenu1.jpg",
+    },
+    {
+      href: "/industries-you-must-know",
+      label: "Industries",
+      dropdown: [
+        {
+          href: "/ai-in-healthcare-you-must-know",
+          label: "AI-Healthcare",
+          image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/Healthcare.jpg",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Hospital.mp4",
+        },
+        {
+          href: "/unique-ai-in-education",
+          label: "AI-Education",
+          image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/education.webp",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/school.mp4",
+        },
+        {
+          href: "/ai-in-ecommerce",
+          label: "AI-E-commerce",
+          image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/AI-E-commerce.avif",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/ECommerce.mp4",
+        },
+        {
+          href: "/new-ai-in-finance",
+          label: "AI-Finance",
+          image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/finance.jpg",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Money.mp4",
+        },
+        {
+          href: "/ai-in-data-security",
+          label: "AI-Data Security",
+          image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/DataSecurity.avif",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Data%20security.mp4",
         },
       ],
     },
@@ -42,49 +91,68 @@ export default function MobileNavbar() {
         {
           href: "/our-company-case-studies",
           label: "Case Studies",
+          icon: IoStatsChartOutline,
+          description: "Real-world AI projects and outcomes",
         },
         {
           href: "/our-blog-lists",
           label: "Blogs",
+          icon: IoAnalyticsOutline,
+          description: "Insights and updates from our team",
         },
         {
           href: "/testimonials",
-          label: "Testimonial",
-        },
-        {
-          href: "/industries-you-must-know",
-          label: "Industries",
+          label: "Testimonials",
+          icon: IoChatbubbleEllipsesOutline,
+          description: "Customer success stories",
         },
       ],
+      dropdownImage: "/navmenu2.jpg",
     },
-    { 
-      href: "", 
-      label: "About Us", 
+    {
+      href: "",
+      label: "About Us",
       dropdown: [
         {
           href: "/about-us",
-          label: "Our Team",
+          label: "Our Team ",
+          icon: IoPeopleOutline,
+          description: "Meet the leadership and experts behind Codework",
         },
         {
-          href: "/event-updates",
-          label: "Events",
+          href: "/ai-automations",
+          label: "100 AI Automations (Booklet)",
+          icon: IoBookOutline,
+          description: "Browse 100 practical AI automation ideas",
         },
-      ] 
+          {
+          href: "/contact-ai-solutions",
+          label: "Contact Us",
+          icon: IoMailOutline,
+          description: "Get in touch with us for more information",
+        },
+      ],
+      dropdownImage: "/navmenu3.jpg",
     },
-    { href: "/careers-at-codework", label: "Career", dropdown: [
-       {
-          href: "/careers-at-codework",
-          label: "Join Our Team",
-        },
+    {
+      href: "",
+      label: "Careers",
+      dropdown: [
         {
-          href: "/join-our-team",
+          href: "/careers-at-codework",
           label: "Job Opportunities",
+          icon: IoBriefcaseOutline,
+          description: "Explore open roles and start your journey",
         },
         {
           href: "/internship",
           label: "Internship Program",
+          icon: IoSchoolOutline,
+          description: "Learn, build, and grow with hands-on projects",
         },
-    ] },
+      ],
+      dropdownImage: "/navmenu4.jpg",
+    },
     {
       href: "/products-we-build",
       label: "Our Products",

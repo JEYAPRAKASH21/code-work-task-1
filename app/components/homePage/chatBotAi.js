@@ -154,13 +154,13 @@ const ChatBotAi = () => {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask us anything about CODEWORK"
+            placeholder="Ask  about CODEWORK"
             className="flex-1 bg-transparent outline-none text-secondary text-sm sm:text-base placeholder:text-gray-600"
           />
           <button
             type="button"
             onClick={() => handleSubmit()}
-            className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-secondary text-primary text-sm font-medium hover:bg-gray-300 hover:text-secondary transition-colors"
+            className="inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-secondary text-primary text-sm font-medium hover:bg-gray-300 hover:text-secondary transition-colors"
           >
             Ask
           </button>
